@@ -1,0 +1,21 @@
+program: train_transformer_fine_tuning.py
+method: random
+metric:
+  goal: maximize
+  name: dev_score
+parameters:
+  embeddings:
+    values: [ distilbert-base-uncased, roberta-base ]
+  learning_rate:
+    values: [5e-5, 3e-5, 2e-5]
+  mini_batch_size:
+    values: [16, 32]
+  max_epochs:
+    values: [2, 3, 4]
+  use_crf:
+    values: [ True, False]
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args}

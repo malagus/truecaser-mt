@@ -1,0 +1,33 @@
+program: train_rnn.py
+method: bayes
+metric:
+  goal: maximize
+  name: dev_score
+parameters:
+  embeddings:
+    values: [ glove ]
+  learning_rate:
+    values: [0.1]
+  mini_batch_size:
+    values: [32]
+  max_epochs:
+    values: [30]
+  use_crf:
+    values: [ True, False]
+  rnn_layers:
+    values: [1, 2, 3]
+  hidden_size:
+    values: [ 32, 64, 128, 256, 512]
+  rnn_type:
+    values: [ LSTM, GRU]
+  dropout:
+    values: [0.0, 0.05, 0.1, 0.25, 0.5]
+  word_dropout:
+    values: [0.0, 0.05, 0.1, 0.25, 0.5]
+  locked_dropout:
+    values: [0.0, 0.05, 0.1, 0.25, 0.5]
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args}

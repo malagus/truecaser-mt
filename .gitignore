@@ -1,0 +1,8 @@
+/wandb/
+/best_models/
+__pycache__/
+/result/
+/runs/
+/data/
+/test/
+/mlruns/

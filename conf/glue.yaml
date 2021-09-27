@@ -1,0 +1,23 @@
+program: glue.py
+method: grid
+metric:
+  goal: maximize
+  name: dev_score
+parameters:
+  model_name_or_path:
+    values: [ distilbert-base-cased, distilbert-base-uncased ]
+  task_name:
+    values: [cola, mnli, mrpc, qnli,  qqp,  rte,  sst2,  stsb, wnli]
+  output_dir:
+    values: [result]
+  num_train_epochs:
+    values: [3]
+  learning_rate:
+    values: [2e-5]
+
+
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args}

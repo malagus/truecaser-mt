@@ -1,0 +1,21 @@
+program: train_task.py
+method: grid
+metric:
+  goal: maximize
+  name: dev_score
+parameters:
+  embeddings:
+    values: [ distilbert-base-cased, distilbert-base-uncased ]
+  task_name:
+    values: [ner, pos]
+  max_epochs:
+    values: [3]
+  learning_rate:
+    values: [2e-5]
+
+
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args}
