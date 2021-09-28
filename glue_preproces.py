@@ -5,15 +5,15 @@ from category import BaseWordCategories
 from model.sequence_tagger_model import SequenceTagger as TruecaserTagger
 
 task_to_keys = {
-    # "cola": ("sentence", None),
-    # "mnli": ("premise", "hypothesis"),
-    # "mrpc": ("sentence1", "sentence2"),
+    "cola": ("sentence", None),
+    "mnli": ("premise", "hypothesis"),
+    "mrpc": ("sentence1", "sentence2"),
     "qnli": ("question", "sentence"), #err :/
     # "qqp": ("question1", "question2"),
-    # "rte": ("sentence1", "sentence2"),
-    # "sst2": ("sentence", None),
-    # "stsb": ("sentence1", "sentence2"),
-    # "wnli": ("sentence1", "sentence2"),
+    "rte": ("sentence1", "sentence2"),
+    "sst2": ("sentence", None),
+    "stsb": ("sentence1", "sentence2"),
+    "wnli": ("sentence1", "sentence2"),
 }
 
 

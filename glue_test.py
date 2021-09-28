@@ -37,42 +37,42 @@ task_to_keys = {
 }
 
 tasks = {
-    # "cola": {
-    #     'cased': 'wandb/run-20201121_220000-8phbczo8',
-    #     'uncased': 'wandb/run-20201122_132921-eguxjqiz'
-    # },
-    # "mnli": {
-    #     'cased': 'wandb/run-20201121_222446-i5xikd7a',
-    #     'uncased': 'wandb/run-20201122_133847-j4mgp0ae'
-    # },
+    "cola": {
+        'cased': 'wandb/run-20201121_220000-8phbczo8',
+        'uncased': 'wandb/run-20201122_132921-eguxjqiz'
+    },
+    "mnli": {
+        'cased': 'wandb/run-20201121_222446-i5xikd7a',
+        'uncased': 'wandb/run-20201122_133847-j4mgp0ae'
+    },
     "mrpc": {
         'cased': 'wandb/run-20201122_085041-tb3ew7s7',
         'uncased': 'wandb/run-20201122_162934-xj0944ug'
     },
-    # "qnli": {
-    #     'cased': 'wandb/run-20201122_085719-qv1leti9',
-    #     'uncased': 'wandb/run-20201122_163600-pultbbkc'
-    # },
-    # "qqp": {
-    #     'cased': 'wandb/run-20201122_094826-y06ft1a6',
-    #     'uncased': 'wandb/run-20201122_172614-qinpv5xg'
-    # },
-    # "rte": {
-    #     'cased': 'wandb/run-20201122_124032-vlcl0q68',
-    #     'uncased': 'wandb/run-20201122_204557-x5mmzibr'
-    # },
-    # "sst2": {
-    #     'cased': 'wandb/run-20201122_124625-04rvzlyk',
-    #     'uncased': 'wandb/run-20201122_205230-wyiykfyv'
-    # },
-    # "stsb": {
-    #     'cased': 'wandb/run-20201122_131710-rzidw0c3',
-    #     'uncased': 'wandb/run-20201122_213731-zfy6ehgb'
-    # },
-    # "wnli": {
-    #     'cased': 'wandb/run-20201122_132421-1yxwh8hd',
-    #     'uncased': 'wandb/run-20201122_214734-4ah76374'
-    # },
+    "qnli": {
+        'cased': 'wandb/run-20201122_085719-qv1leti9',
+        'uncased': 'wandb/run-20201122_163600-pultbbkc'
+    },
+    "qqp": {
+        'cased': 'wandb/run-20201122_094826-y06ft1a6',
+        'uncased': 'wandb/run-20201122_172614-qinpv5xg'
+    },
+    "rte": {
+        'cased': 'wandb/run-20201122_124032-vlcl0q68',
+        'uncased': 'wandb/run-20201122_204557-x5mmzibr'
+    },
+    "sst2": {
+        'cased': 'wandb/run-20201122_124625-04rvzlyk',
+        'uncased': 'wandb/run-20201122_205230-wyiykfyv'
+    },
+    "stsb": {
+        'cased': 'wandb/run-20201122_131710-rzidw0c3',
+        'uncased': 'wandb/run-20201122_213731-zfy6ehgb'
+    },
+    "wnli": {
+        'cased': 'wandb/run-20201122_132421-1yxwh8hd',
+        'uncased': 'wandb/run-20201122_214734-4ah76374'
+    },
 
 }
 

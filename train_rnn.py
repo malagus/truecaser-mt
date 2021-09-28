@@ -74,7 +74,7 @@ def main():
     parser.add_argument('--locked_dropout', type=float, default=0.5)
 
     parser.add_argument('--mini_batch_size', type=int, default=32)
-    parser.add_argument('--max_epochs', type=int, default=50)
+    parser.add_argument('--max_epochs', type=int, default=30)
     parser.add_argument('--learning_rate', type=float, default=0.1)
 
     args = parser.parse_args()
