@@ -10,7 +10,7 @@ from category import BaseWordCategories
 from dataset.datasets import WIKINER_ENGLISH
 from dataset.processor import DatasetProcessor
 from model.sequence_tagger_model import SequenceTagger as TruecaserTagger
-
+# Best models locations
 tasks = {
     'ner': {
         'cased': 'wandb/run-20201127_105306-794ghmkd/final-model.pt',
@@ -80,7 +80,7 @@ def experiment(base_path, corpus, variant):
             model_path = task[type]
             run_test(base_path / task_name / type / variant, corpus, model_path, variant)
 
-
+# Test script for ner and pos experiments
 log_handler_global = add_file_handler(log, base_path / "training.log")
 for corpus in datasets:
     dataset_name = corpus.__class__.__name__.lower()

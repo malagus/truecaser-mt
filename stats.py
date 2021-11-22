@@ -2,7 +2,7 @@ from flair.data import Corpus
 from flair.datasets import WIKINER_ENGLISH, CONLL_03
 
 from dataset.datasets import Conll_2003_Trucase, TruecaseDataset
-
+# Datasets statistics
 corpus: Corpus = CONLL_03(base_path='data')
 print(corpus)
 stats = corpus.obtain_statistics()

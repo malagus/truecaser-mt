@@ -5,7 +5,7 @@ from flair.datasets import CONLL_03, WIKINER_ENGLISH
 
 from category import BaseWordCategories
 from dataset.datasets import TruecaseDataset
-
+# Preprocessing script for datasets
 base_path = 'data/base_word'
 base_path: Path = Path(base_path)
 corpus: Corpus = WIKINER_ENGLISH(base_path='data', tag_to_bioes=None)

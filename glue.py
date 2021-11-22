@@ -115,7 +115,7 @@ class ModelArguments:
         metadata={"help": "Whether to use one of the fast tokenizer (backed by the tokenizers library) or not."},
     )
 
-
+# Glue training script
 def main():
     run: Run = wandb.init(project="truecaser", group="glue")
 

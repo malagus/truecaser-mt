@@ -49,6 +49,9 @@ def get_embeddings(embeddings_name):
 
 
 def main():
+    """
+    Base script for training transformer model
+    """
     # Training settings
     parser = argparse.ArgumentParser(description='Truecaser training')
     parser.add_argument('--corpus', type=str, default='wikiner')

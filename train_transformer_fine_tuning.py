@@ -24,6 +24,10 @@ log = logging.getLogger("truecaser")
 
 
 def get_corpus(corpus_name):
+    """
+    Get corpus for training
+    :corpus_name - name of corpus ( wikiner or conll03)
+    """
     if corpus_name == 'wikiner':
         return WIKINER_ENGLISH(base_path='data/base_word', tag_to_bioes=None, in_memory=True)
         # corpus: Corpus = WIKINER_ENGLISH(in_memory=True)
@@ -44,10 +48,17 @@ def get_corpus(corpus_name):
 
 
 def get_embeddings(embeddings_name):
+    """
+    Get embeddings by name
+    :embeddings_name - embeddings name
+    """
     return TransformerWordEmbeddings(embeddings_name, fine_tune=True)
 
 
 def main():
+    """
+    Base script for training fine tuning transformer
+    """
     # Training settings
     parser = argparse.ArgumentParser(description='Truecaser training')
     parser.add_argument('--corpus', type=str, default='wikiner')

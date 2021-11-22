@@ -25,12 +25,12 @@ def lowercase(task, example):
         example[sentence2_key] = example[sentence2_key].lower()
     return example
 
-
+# Glee preparations script
 trucaser: TruecaserTagger = TruecaserTagger.load('best_models/truecaser.pt')
 trucaser.eval()
 category = BaseWordCategories()
 
-
+# Trucase text
 def truecase_text(text):
     sentence = Sentence(text.lower())
 
@@ -44,7 +44,7 @@ def truecase_text(text):
 
     return sentence.to_original_text()
 
-
+# Truecase data
 def truecase(task, example):
     sentence1_key, sentence2_key = task_to_keys[task]
     if sentence1_key is not None:

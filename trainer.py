@@ -48,7 +48,7 @@ def flatten_dict(dd, separator='_', prefix=''):
             for k, v in flatten_dict(vv, separator, kk).items()
             } if isinstance(dd, dict) else {prefix: dd}
 
-
+# Trainer for our truecaser model . Modification of original flair trainer
 class TruecaserTrainer(ModelTrainer):
     def __init__(
             self,

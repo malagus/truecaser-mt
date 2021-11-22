@@ -2,7 +2,7 @@ from typing import Optional
 
 import torch
 
-
+# Slanted Triangular Learning Rate Scheduler
 class STLR(torch.optim.lr_scheduler._LRScheduler):
     def __init__(
             self,

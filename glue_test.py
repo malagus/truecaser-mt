@@ -35,7 +35,7 @@ task_to_keys = {
     "stsb": ("sentence1", "sentence2"),
     "wnli": ("sentence1", "sentence2"),
 }
-
+# Glue best models
 tasks = {
     "cola": {
         'cased': 'wandb/run-20201121_220000-8phbczo8',
@@ -153,7 +153,7 @@ class ModelArguments:
         metadata={"help": "Whether to use one of the fast tokenizer (backed by the tokenizers library) or not."},
     )
 
-
+# Modified script for glue testing
 def main(task_name, model_name, case):
     output_dir = 'test/glue'
     # Setup logging
